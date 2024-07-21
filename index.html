@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header id="home">
+        <div class="contact-info">
+            <h1 id="name">Chamod Malintha</h1>
+            <p><i class="fa-solid fa-envelope email-icon"></i> chamod@mail.com</p>
+            <p><i class="fa-solid fa-phone phone-icon"></i> +1234567890</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="images/chamod.jpg" alt="Profile Image" class="profile-image">
+        <div class="about-text">
+            <h2>Hi, I'm Chamod Malintha! <span class="wave-emoji">👋</span></h2>
+            <p>I am a skilled web developer with 2 years of experience specializing in front-end and back-end technologies. Proficient in HTML, CSS, and JavaScript, I create responsive and dynamic web applications. My expertise extends to cloud computing, where I have successfully deployed and managed applications on IBM Cloud. Additionally, I am well-versed in version control using Git, ensuring efficient code collaboration and management across projects.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>
+                <div class="skill-card">
+                    <img src="images/html.png" alt="HTML Logo">
+                    <p>HTML</p>
+                    <p>2 years experience</p>
+                </div>
+            </li>
+            <li>
+                <div class="skill-card">
+                    <img src="images/css.png" alt="CSS Logo">
+                    <p>CSS</p>
+                    <p>2 years experience</p>
+                </div>
+            </li>
+            <li>
+                <div class="skill-card">
+                    <img src="images/javascript.png" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                    <p>1 year experience</p>
+                </div>
+            </li>
+            <li>
+                <div class="skill-card">
+                    <img src="images/git.png" alt="Java Logo">
+                    <p>Git</p>
+                    <p>2 years experience</p>
+                </div>
+            </li>
+            <li>
+                <div class="skill-card">
+                    <img src="images/cloud.jpg" alt="React Logo">
+                    <p>Cloud Computing</p>
+                    <p>0.5 years experience</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>
+                <h4>Book Store</h4>
+                <ul>
+                    <li>Developed an online bookstore with features for searching, ordering, and reviewing books.</li>
+                </ul>
+                <hr>
+            </li>
+            <li>
+                <h4>Student Management System</h4>
+                <ul>
+                    <li>Created a student management system to handle student data, grades, and attendance tracking.</li>
+                </ul>
+                <hr>
+            </li>
+            <li>
+                <h4>Fashion Website</h4>
+                <ul>
+                    <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <ul id="recommendation-list">
+            <li class="recommendation-card"><i>"Chamod is a very quick learner and quickly grasps key concepts of Web development. He got a great attitude & he is an excellent team player. He has a curious mind and asks the right questions. he takes initiative within a team and has potentials to lead the team."</i></li>
+            <li class="recommendation-card"><i>"Working with Chamod  has been an awesome experience. He is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need her expertise I would definitely want to work with her again."</i></li>
+            <li class="recommendation-card"><i>"I had worked along with Chamod  during the initial phase of our venture which needed Web development. He is a committed resource who has in depth knowledge about the domain. he will be an asset for any organisation!"</i></li>
+        </ul>
+        <div class="recommendation-form">
+            <h3>Leave a Recommendation</h3>
+            <input type="text" id="recommendation-name" placeholder="Name (Optional)">
+            <textarea id="message" placeholder="Message" rows="5"></textarea>
+            <button onclick="addRecommendation()">Submit</button>
+        </div>
+    </section>
+
+    <a href="#home" class="home-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="40px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m0-6l-3 3m3-3l3 3" />
+        </svg>
+    </a>
+
+    <!-- Popup structure -->
+    <div id="popup">
+        <div class="popup-content">
+            <i class="fa fa-check-circle" style="font-size: 24px; color: #4b0082;"></i>
+            <p>Thanks for leaving a recommendation!</p>
+            <button onclick="hidePopup()">Ok</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
